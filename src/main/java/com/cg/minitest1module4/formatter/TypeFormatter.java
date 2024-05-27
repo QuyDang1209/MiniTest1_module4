@@ -20,9 +20,14 @@ public class TypeFormatter implements Formatter<Type> {
     }
 
     @Override
-    public Type parse(String text, Locale locale) throws ParseException {
-        Optional<Type> optionalType = typeService.findById(Long.parseLong(text));
-        return optionalType.orElse(null);
+    public Type parse(String text, Locale locale) {
+        Type optionalType = null;
+        try {
+            optionalType = typeService.findById(Long.parseLong(text));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return optionalType;
     }
 
     @Override

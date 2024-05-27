@@ -23,8 +23,8 @@ public class TypeService implements ITypeService {
     }
 
     @Override
-    public Optional<Type> findById(Long id) {
-        return iTypeRepository.findById(id);
+    public Type findById(Long id) {
+        return iTypeRepository.findById(id).orElseThrow();
     }
 
     @Override

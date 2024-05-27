@@ -11,8 +11,8 @@
     </a>
 </p>
 <div id="form">
-    <form action="/create" th:object="${computer}"
-          method="POST" novalidate="novalidate">
+    <form action="/create" th:object="${computerForm}"
+          method="POST" novalidate="novalidate" enctype="multipart/form-data">
         <input type="hidden" th:field="*{id}"/>
         <div>
             <label for="code">Code</label>
@@ -23,10 +23,16 @@
             <label for="name">Name</label>
             <input type="text" id="name" th:field="*{name}"/> <br>
             <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
-        </div> <div>
+        </div>
+        <div>
             <label for="producer">Producer</label>
             <input type="text" id="producer" th:field="*{producer}"/> <br>
         <p th:if="${#fields.hasErrors('producer')}" th:errors="*{producer}">Name Error</p>
+        </div>
+        <div>
+            <label for="img">Image</label>
+            <input type="file" id="img" th:field="*{img}"/> <br>
+            <p th:if="${#fields.hasErrors('producer')}" th:errors="*{producer}">Name Error</p>
         </div>
         <div>
             <label for="type">Type</label>

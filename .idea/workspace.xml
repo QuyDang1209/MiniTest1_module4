@@ -5,36 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8cb2de0-25a4-4d7f-b747-c49a04989c72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/repository/IComputerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/repository/ITypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IComputerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/ITypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/exception/CodeExists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/exception/IdNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/ComputerForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/upload_file.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_404b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/repository/IComputerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/repository/IComputerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IComputerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IComputerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,24 +67,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Build minitest1Module4.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 9.0.88.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/Desktop/Module 4/demovalidaton_CustomValidation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build minitest1Module4.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.88.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/Module 4/minitest1Module4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\Desktop\Module 4\minitest1Module4\src\main\webapp\WEB-INF\views" />
@@ -205,22 +196,20 @@
       <option name="presentableId" value="Default" />
       <updated>1716365774790</updated>
       <workItem from="1716365774877" duration="7482000" />
-      <workItem from="1716388098269" duration="2126000" />
+      <workItem from="1716388098269" duration="8150000" />
+      <workItem from="1716396652668" duration="59000" />
+      <workItem from="1716436892961" duration="696000" />
+      <workItem from="1716446990161" duration="2012000" />
+      <workItem from="1716452809382" duration="1592000" />
+      <workItem from="1716534185123" duration="7228000" />
+      <workItem from="1716558750913" duration="7137000" />
+      <workItem from="1716715847568" duration="774000" />
+      <workItem from="1716730748326" duration="3340000" />
+      <workItem from="1716771931228" duration="1779000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

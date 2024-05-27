@@ -10,11 +10,11 @@
         Add new Computer
     </a>
 </p>
-<p>
-    <a th:href="@{/type}">
-        Type
-    </a>
-</p>
+<!--<p>-->
+<!--    <a th:href="@{/type}">-->
+<!--        Type-->
+<!--    </a>-->
+<!--</p>-->
 <div class="notify">
     <div th:if="${message}">
         <span th:text="${message}"></span>
@@ -29,6 +29,7 @@
         <th>NAME</th>
         <th>PRODUCER</th>
         <th>TYPE</th>
+        <th>IMAGE</th>
         <th>Update</th>
         <th>Delete</th>
     </tr>
@@ -40,6 +41,7 @@
         <td th:text="${c.getName()}"></td>
         <td th:text="${c.getProducer()}"></td>
         <td th:text="${c.getType().getName()}"></td>
+        <td><img width="100" height="100" th:src="@{'/image/' + ${c.img}}"></td>
         <td><a th:href="@{/update/{id}(id=${c.getId()})}">update</a></td>
         <td><a th:href="@{/delete/{id}(id=${c.getId()})}">delete</a></td>
     </tr>

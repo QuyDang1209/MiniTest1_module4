@@ -1,5 +1,7 @@
 package com.cg.minitest1module4.service;
 
+import com.cg.minitest1module4.model.Type;
+
 import java.util.Optional;
 
 public interface IGenerateService<T> {
@@ -7,7 +9,7 @@ public interface IGenerateService<T> {
 
     void save(T t);
 
-    Optional<T> findById(Long id);
+    T findById(Long id) throws Exception;
 
     void remove(Long id);
 }

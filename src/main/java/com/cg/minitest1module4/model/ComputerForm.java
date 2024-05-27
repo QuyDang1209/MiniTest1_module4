@@ -4,13 +4,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
 
-@Component
-@Entity
-@Table(name = "computer")
-public class Computer implements Validator {
+
+
+public class ComputerForm implements Validator {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,20 +21,20 @@ public class Computer implements Validator {
     @ManyToOne
     @JoinColumn(name = "type_id")
     private Type type;
-    private String img;
+    private MultipartFile img;
 
-    public String getImg() {
+    public MultipartFile getImg() {
         return img;
     }
 
-    public void setImg(String img) {
+    public void setImg(MultipartFile img) {
         this.img = img;
     }
 
-    public Computer() {
+    public ComputerForm() {
     }
 
-    public Computer(Long id, String code, String name, String producer, Type type, String img) {
+    public ComputerForm(Long id, String code, String name, String producer, Type type, MultipartFile img) {
         this.id = id;
         this.code = code;
         this.name = name;
@@ -85,12 +85,12 @@ public class Computer implements Validator {
 
     @Override
     public boolean supports(Class<?> clazz) {
-       return Computer.class.isAssignableFrom(clazz);
+        return Computer.class.isAssignableFrom(clazz);
     }
 
     @Override
     public void validate(Object target, Errors errors) {
-        Computer computer = (Computer) target;
+        ComputerForm computer = (ComputerForm) target;
         String code = computer.getCode();
         String name = computer.getName();
         String producer = computer.getProducer();
@@ -103,4 +103,6 @@ public class Computer implements Validator {
         ValidationUtils.rejectIfEmpty(errors,"producer", "producer.emty", "Không được bỏ trống");
         ValidationUtils.rejectIfEmpty(errors,"type", "type.emty", "Không được bỏ trống");
     }
+
+
 }
