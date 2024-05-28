@@ -9,6 +9,8 @@ import com.cg.minitest1module4.service.IComputerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 
 public class ComputerService implements IComputerService {
@@ -26,9 +28,9 @@ private IComputerRepository iComputerRepository;
     }
 
     @Override
-    public Computer findById(Long id){
+    public Optional<Computer> findById(Long id) throws RuntimeException{
 
-        return iComputerRepository.findById(id).orElseThrow(() -> new RuntimeException("Computer not found"));
+        return iComputerRepository.findById(id);
     }
 
     @Override

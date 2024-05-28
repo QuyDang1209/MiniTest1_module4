@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 import org.springframework.stereotype.Component;
 
-import java.text.ParseException;
 import java.util.Locale;
 import java.util.Optional;
 
@@ -21,13 +20,13 @@ public class TypeFormatter implements Formatter<Type> {
 
     @Override
     public Type parse(String text, Locale locale) {
-        Type optionalType = null;
+        Optional<Type> optionalType = null;
         try {
             optionalType = typeService.findById(Long.parseLong(text));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        return optionalType;
+        return optionalType.get();
     }
 
     @Override

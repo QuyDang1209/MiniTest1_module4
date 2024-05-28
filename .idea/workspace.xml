@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8cb2de0-25a4-4d7f-b747-c49a04989c72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/exception/CodeExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/exception/IdNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/logger/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/ComputerForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/upload_file.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_404b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Computer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/repository/IComputerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/repository/IComputerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IComputerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IComputerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error_404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +194,10 @@
       <workItem from="1716558750913" duration="7137000" />
       <workItem from="1716715847568" duration="774000" />
       <workItem from="1716730748326" duration="3340000" />
-      <workItem from="1716771931228" duration="1779000" />
+      <workItem from="1716771931228" duration="3638000" />
+      <workItem from="1716792262846" duration="7977000" />
+      <workItem from="1716825807107" duration="1354000" />
+      <workItem from="1716858511329" duration="1462000" />
     </task>
     <servers />
   </component>

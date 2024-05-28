@@ -9,7 +9,7 @@ public interface IGenerateService<T> {
 
     void save(T t);
 
-    T findById(Long id) throws Exception;
+     Optional<T> findById(Long id) throws Exception;
 
     void remove(Long id);
 }

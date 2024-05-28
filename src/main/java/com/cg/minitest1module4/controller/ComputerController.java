@@ -2,6 +2,7 @@ package com.cg.minitest1module4.controller;
 
 import com.cg.minitest1module4.exception.CodeExists;
 import com.cg.minitest1module4.exception.IdNotFound;
+import com.cg.minitest1module4.model.Cart;
 import com.cg.minitest1module4.model.Computer;
 import com.cg.minitest1module4.model.ComputerForm;
 import com.cg.minitest1module4.model.Type;
@@ -26,6 +27,7 @@ import java.util.Optional;
 import java.util.logging.Logger;
 
 @Controller
+@SessionAttributes("cart")
 public class ComputerController {
     @Value("${file-upload}")
     private String upload;
@@ -33,6 +35,10 @@ public class ComputerController {
     private IComputerService computerService;
     @Autowired
     private ITypeService typeService;
+    @ModelAttribute("cart")
+    public Cart setupCart(){
+        return new Cart();
+    }
     private static final Logger logger = Logger.getLogger(ComputerController.class.getName());
 
     @ModelAttribute("types")
@@ -88,7 +94,7 @@ public class ComputerController {
 //            return new ModelAndView("/error_404");
 //        }
         try {
-            Computer computer = computerService.findById(id);
+            Optional<Computer> computer = computerService.findById(id);
             if (computer != null) {
                 ModelAndView modelAndView = new ModelAndView("update");
                 modelAndView.addObject("computer", computer);
@@ -160,4 +166,22 @@ public class ComputerController {
     public ModelAndView computerCodeExists() {
         return new ModelAndView("error_404b");
     }
+
+    // shopping
+    @GetMapping("/add/{id}")
+    public String addToCart(@PathVariable Long id,
+                            @ModelAttribute Cart cart,
+                            @RequestParam("action") String action) throws Exception {
+        Optional<Computer> productOptional = computerService.findById(id);
+        if (!productOptional.isPresent()) {
+            return "/error_404";
+        }
+        if (action.equals("show")) {
+            cart.addComputer(productOptional.get());
+            return "redirect:/cart";
+        }
+        cart.addComputer(productOptional.get());
+        return "redirect:/computer";
+    }
+
 }

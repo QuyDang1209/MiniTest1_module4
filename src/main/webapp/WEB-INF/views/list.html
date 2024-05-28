@@ -10,6 +10,9 @@
         Add new Computer
     </a>
 </p>
+<p>
+    <a href="/shopping-cart">Your cart</a>
+</p>
 <!--<p>-->
 <!--    <a th:href="@{/type}">-->
 <!--        Type-->
@@ -32,6 +35,7 @@
         <th>IMAGE</th>
         <th>Update</th>
         <th>Delete</th>
+        <th>Add to Cart</th>
     </tr>
     </thead>
     <tbody>
@@ -44,6 +48,7 @@
         <td><img width="100" height="100" th:src="@{'/image/' + ${c.img}}"></td>
         <td><a th:href="@{/update/{id}(id=${c.getId()})}">update</a></td>
         <td><a th:href="@{/delete/{id}(id=${c.getId()})}">delete</a></td>
+        <td><a th:href="@{/add/__${c.id}__(action='list')}">Add To Cart</a></td>
     </tr>
     </tbody>
 </table>
