@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8cb2de0-25a4-4d7f-b747-c49a04989c72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ShopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/security/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/configuration/AppInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/controller/ComputerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/formatter/TypeFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/IGenerateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/ComputerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cg/minitest1module4/service/impl/TypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +199,13 @@
       <workItem from="1716771931228" duration="3638000" />
       <workItem from="1716792262846" duration="7977000" />
       <workItem from="1716825807107" duration="1354000" />
-      <workItem from="1716858511329" duration="1462000" />
+      <workItem from="1716858511329" duration="4068000" />
+      <workItem from="1716887905113" duration="2228000" />
+      <workItem from="1716901922492" duration="546000" />
+      <workItem from="1716903973218" duration="619000" />
+      <workItem from="1716910684830" duration="247000" />
+      <workItem from="1716945110249" duration="14000" />
+      <workItem from="1717033718580" duration="4606000" />
     </task>
     <servers />
   </component>

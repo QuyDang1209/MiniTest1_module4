@@ -45,6 +45,14 @@ dependencies {
     implementation group: 'org.hibernate', name: 'hibernate-validator', version: '6.0.10.Final'
     implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
     implementation group: 'org.springframework', name: 'spring-aspects', version: '5.3.20'
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-web
+    implementation group: 'org.springframework.security', name: 'spring-security-web', version: '5.8.0'
+// https://mvnrepository.com/artifact/org.springframework.security/spring-security-config
+    implementation group: 'org.springframework.security', name: 'spring-security-config', version: '5.8.0'
+// https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs
+    implementation group: 'org.springframework.security', name: 'spring-security-taglibs', version: '5.8.0'
+    // https://mvnrepository.com/artifact/org.thymeleaf.extras/thymeleaf-extras-springsecurity5
+    implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.1.0.RELEASE'
 
 
 }

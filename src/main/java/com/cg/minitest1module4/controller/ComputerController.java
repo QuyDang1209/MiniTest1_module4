@@ -28,6 +28,7 @@ import java.util.logging.Logger;
 
 @Controller
 @SessionAttributes("cart")
+@RequestMapping("/computer")
 public class ComputerController {
     @Value("${file-upload}")
     private String upload;
@@ -46,7 +47,7 @@ public class ComputerController {
         return typeService.findAll();
     }
 
-    @GetMapping("/computer")
+    @GetMapping("/list")
     public ModelAndView listComputer() {
         ModelAndView modelAndView = new ModelAndView("list");
         Iterable<Computer> computers = computerService.findAll();
